@@ -8,14 +8,14 @@ titanic.test$IsTrainSet <- FALSE
 
 titanic.test$Survived <- NA
 
-#cleaning
+#cleaning the loaded data
 titanic.full[titanic.full$Embarked == '', "Embarked"] <- 'S'
 
-#cleaning
+#cleaning the loaded data
 age.median <- median(titanic.full$Age, na.rm = TRUE)
 titanic.full[is.na(titanic.full$Age), "Age"] <- age.median
 
-#cleaning
+#cleaning the loaded data
 fare.median <- median(titanic.full$Fare, na.rm = TRUE)
 titanic.full[is.na(titanic.full$Fare), "Fare"] <- fare.median 
 
