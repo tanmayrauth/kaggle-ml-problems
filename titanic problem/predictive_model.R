@@ -1,3 +1,4 @@
+#setting the current working directory
 setwd("E:/Kaggle/titanic problem")
 
 titanic.train <- read.csv(file = "train.csv", stringsAsFactors = FALSE, header = TRUE)
